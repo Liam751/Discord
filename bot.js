@@ -6,10 +6,20 @@ var command = "!boy weakness fire";
 var arguments = command.split(' ');
 
 if (arguments[0] == "!boy") {
-    switch ( arguments [1] ) {
-        case "weakness" :
+    if (arguments[1]) {
+        switch ( arguments [1] ) {
+            case "weakness" :
+                if (arguments[2]) {
+                    switch (arguments[2]){
+                        case "fire" :
+                            break;
+                    }
+                }
             break;
+        }
+
     }
+
 }
 
 /*
