@@ -60,7 +60,7 @@ if (arguments[0] == "!boy") {
                 
         }
     }
-    break;
+
 }
 message.channel.send(output)
 
