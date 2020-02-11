@@ -142,7 +142,36 @@ client.on('message', message => {
     if (message.content == '!boy weakness normal') {
         message.reply('Weakness: Fighting');
     }
+
+//new thing bruh
+
+    if (message.content == '!boy speak') {
+        speak()
+        message.reply(y);
+    }
+
 });
+
+function speak() {
+  var n = Math.ceil(Math.random() * 15); 
+  if (n == 1) {
+      y = 'There are consequences to killing a God!'
+  }
+  else if (n == 2) {
+      y = 'ÓÐR BRÓÐIR BLINDR!'
+  }
+  else if (n == 3) {
+    y = 'In the direction of deer...'
+   }
+  else if (n == 4) {
+    y = 'VALHALLA!'
+   }
+   else if (n == 5) {
+       y = 'UNWORTHY U N W O R T H Y'
+   }
+}
+
+
 
 // THIS  MUST  BE  THIS  WAY
 
