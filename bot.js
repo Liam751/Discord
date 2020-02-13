@@ -150,10 +150,14 @@ client.on('message', message => {
         message.reply(y);
     }
 
+    if (message.content == '!boy why aint he talkin') {
+        message.reply('https://media.discordapp.net/attachments/669259868628320274/677597045380612096/image0.gif');
+    }
+
 });
 
 function speak() {
-  var n = Math.ceil(Math.random() * 15); 
+  var n = Math.ceil(Math.random() * 6); 
   if (n == 1) {
       y = 'There are consequences to killing a God!'
   }
@@ -169,7 +173,11 @@ function speak() {
    else if (n == 5) {
        y = 'UNWORTHY U N W O R T H Y'
    }
+   else if (n == 6) {
+       y = ''
+   }
 }
+
 
 
 
