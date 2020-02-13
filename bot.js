@@ -154,6 +154,10 @@ client.on('message', message => {
         message.reply('https://media.discordapp.net/attachments/669259868628320274/677597045380612096/image0.gif');
     }
 
+    if (message.content == '!boy my name is') {
+        message.reply('Jeff')
+    }
+
 });
 
 function speak() {
