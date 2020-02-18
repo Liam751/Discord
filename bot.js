@@ -65,9 +65,6 @@ message.channel.send(output)
 */
 
 
-
-
-
 client.on('ready', () => {
 
     console.log('I am ready!');
@@ -145,25 +142,25 @@ client.on('message', message => {
 
 //new thing bruh
 
-    if (message.content == '!boy speak') {
-        speak()
+    if (message.content == '!Jeff') {
+        image()
         message.reply(y);
     }
 
-    if (message.content == '!boy why aint he talkin') {
+    if (message.content == '!why aint he talkin') {
         message.reply('https://media.discordapp.net/attachments/669259868628320274/677597045380612096/image0.gif');
     }
 
-    if (message.content == '!boy my name is') {
+    if (message.content == '!my name is') {
         message.reply('Jeff')
     }
 
 });
 
-function speak() {
+function image() {
   var n = Math.ceil(Math.random() * 6); 
   if (n == 1) {
-      y = 'There are consequences to killing a God!'
+      y = 'https://media.discordapp.net/attachments/679400883162710037/679400945939120128/image0.png?width=343&height=611'
   }
   else if (n == 2) {
       y = 'ÓÐR BRÓÐIR BLINDR!'
