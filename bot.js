@@ -172,10 +172,21 @@ if (first == "?") {
     }
 
     if (message.content == '0627') {
-        if (answer == 0627) {
+        if (answer == birthday) {
             message.reply('u r right! Here are 6 Jeff Coins')
             var jeffcoin = jeffcoin + 6
-            answer = 2
+            answer = nothing
+        }
+        else {
+            message.reply('i didnt ask')
+        }
+    }
+
+    if (message.content == '21') {
+        if (answer == funni) {
+            message.reply('u r right! Here are 6 Jeff Coins')
+            var jeffcoin = jeffcoin + 6
+            answer = nothing
         }
         else {
             message.reply('i didnt ask')
@@ -185,11 +196,16 @@ if (first == "?") {
 });
 
 function jeffquiz() {
-    var t = Math.ceil(Math.random() * 1); 
+    var t = Math.ceil(Math.random() * 2); 
     if (t == 1) {
         question = 'What is gods birthday?'
-        answer = 0627
+        answer = birthday
     }
+    else if (t == 2) {
+        question = 'whats 9 + 10?'
+        answer = funni
+    }
+    
 }
 
 function image() {
