@@ -172,7 +172,7 @@ if (first == "?") {
     }
 
     if (message.content == '0627') {
-        if (answer = 0627) {
+        if (answer == 0627) {
             message.reply('u r right! Here are 6 Jeff Coins')
             var jeffcoin = jeffcoin + 6
             answer = 2
