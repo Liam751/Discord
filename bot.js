@@ -142,6 +142,18 @@ client.on('message', message => {
 
 //new thing bruh
 
+var word = "?hello";
+var first = word.substring(0,1);
+var second = word.substring(1,5);
+var end = word.substring(1,word.length);
+
+if (first == "?") {
+    if (second == "Jeff") {
+        message.reply('i am god')
+    }
+    
+}
+
     if (message.content == '!Jeff') {
         image()
         message.reply(y);
