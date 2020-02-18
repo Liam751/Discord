@@ -144,11 +144,10 @@ client.on('message', message => {
 
 var word = "?hello";
 var first = word.substring(0,1);
-var second = word.substring(1,5);
 var end = word.substring(1,word.length);
 
 if (first == "?") {
-    if (second == "Jeff") {
+    if (end == "Jeff") {
         message.reply('i am god')
     }
     
