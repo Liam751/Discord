@@ -63,7 +63,7 @@ if (arguments[0] == "!boy") {
 }
 message.channel.send(output)
 */
-
+var jeffcoin = 0
 
 client.on('ready', () => {
 
@@ -166,9 +166,31 @@ if (first == "?") {
         message.reply('Jeff')
     }
 
+    if (message.content == '?jeff') {
+        jeffquiz()
+        message.reply(question)
+    }
+
+    if (message.content == '0627') {
+        if (answer = 0627) {
+            message.reply('u r right! Here are 6 Jeff Coins')
+            var jeffcoin = jeffcoin + 6
+            answer = 2
+        }
+    }
+
 });
 
+function jeffquiz() {
+    var t = Math.ceil(Math.random() * 1); 
+    if (t == 1) {
+        question = 'What is gods birthday?'
+        answer = 0627
+    }
+}
+
 function image() {
+    if (jeffcoin >= 6) {
   var n = Math.ceil(Math.random() * 6); 
   if (n == 1) {
       y = 'https://media.discordapp.net/attachments/679400883162710037/679400945939120128/image0.png?width=343&height=611'
@@ -188,6 +210,10 @@ function image() {
    else if (n == 6) {
        y = ''
    }
+}
+else {
+    y = 'insufficent jeff coin'
+}
 }
 
 
