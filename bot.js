@@ -177,6 +177,9 @@ if (first == "?") {
             var jeffcoin = jeffcoin + 6
             answer = 2
         }
+        else {
+            message.reply('i didnt ask')
+        }
     }
 
 });
