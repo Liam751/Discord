@@ -177,34 +177,34 @@ if (message.content == '?help') {
 
     if (message.content == '?0627') {
         if (answer == birthday) {
-            message.reply("You're right! Here are 5 jeffcoins")
+            message.reply('Youre right! Here are 5 jeffcoins')
             var jeffcoin = jeffcoin + 5
             answer = nothing
         }
         else {
-            message.reply("I didn't ask")
+            message.reply('I didnt ask')
         }
     }
 
     if (message.content == '?21') {
         if (answer == funni) {
-            message.reply("You're right! Here are 5 jeffcoins")
+            message.reply('Youre right! Here are 5 jeffcoins')
             var jeffcoin = jeffcoin + 5
             answer = nothing
         }
         else {
-            message.reply("I didn't ask")
+            message.reply('I didnt ask')
         }
     }
 
     if (message.content == '?north korea') {
         if (answer == north) {
-            message.reply("You're right! Here are 5 jeffcoins")
+            message.reply('Youre right! Here are 5 jeffcoins')
             jeffcoin = jeffcoin + 5
             answer = nothing
         }
         else {
-            message.reply("I didn't ask")
+            message.reply('I didnt ask')
         }
     }
 
