@@ -198,7 +198,7 @@ if (message.content == '?help') {
     }
 
     if (message.content == '?north korea') {
-        if (answer == north) {
+        if (answer == korea) {
             message.reply('Youre right! Here are 5 jeffcoins')
             jeffcoin = jeffcoin + 5
             answer = nothing
@@ -222,7 +222,7 @@ function jeffquiz() {
     }
     else if (t == 3) {
         question = 'where is jeff from?'
-        answer = north
+        answer = korea
     }
 }
 
