@@ -150,53 +150,68 @@ if (first == "?") {
     if (end == "Jeff") {
         message.reply('i am god')
     }
-    
 }
 
-    if (message.content == '!Jeff') {
+//HELP
+if (message.content == '?help') {
+    message.reply("This is Jeff Bot. Use '?jeff quiz' to get a question about god. To answer use '?(answer here)'. Make sure answer is all lower case. Each right answer is 5 jeffcoin. Use '?jeff' to spend 15 jeffcoin and recieve a jeff image. Make sure to stan Jeffkimo627!")
+}
+
+    if (message.content == '?jeff') {
         image()
         message.reply(y);
     }
 
-    if (message.content == '!why aint he talkin') {
+    if (message.content == '?why aint he talkin') {
         message.reply('https://media.discordapp.net/attachments/669259868628320274/677597045380612096/image0.gif');
     }
 
-    if (message.content == '!my name is') {
+    if (message.content == '?my name is') {
         message.reply('Jeff')
     }
 
-    if (message.content == '?jeff') {
+    if (message.content == '?jeff quiz') {
         jeffquiz()
         message.reply(question)
     }
 
-    if (message.content == '0627') {
+    if (message.content == '?0627') {
         if (answer == birthday) {
-            message.reply('u r right! Here are 6 Jeff Coins')
-            var jeffcoin = jeffcoin + 6
+            message.reply("You're right! Here are 5 jeffcoins")
+            var jeffcoin = jeffcoin + 5
             answer = nothing
         }
         else {
-            message.reply('i didnt ask')
+            message.reply("I didn't ask")
         }
     }
 
-    if (message.content == '21') {
+    if (message.content == '?21') {
         if (answer == funni) {
-            message.reply('u r right! Here are 6 Jeff Coins')
-            var jeffcoin = jeffcoin + 6
+            message.reply("You're right! Here are 5 jeffcoins")
+            var jeffcoin = jeffcoin + 5
             answer = nothing
         }
         else {
-            message.reply('i didnt ask')
+            message.reply("I didn't ask")
+        }
+    }
+
+    if (message.content == '?north korea') {
+        if (answer == north) {
+            message.reply("You're right! Here are 5 jeffcoins")
+            jeffcoin = jeffcoin + 5
+            answer = nothing
+        }
+        else {
+            message.reply("I didn't ask")
         }
     }
 
 });
 
 function jeffquiz() {
-    var t = Math.ceil(Math.random() * 2); 
+    var t = Math.ceil(Math.random() * 3); 
     if (t == 1) {
         question = 'What is gods birthday?'
         answer = birthday
@@ -205,12 +220,16 @@ function jeffquiz() {
         question = 'whats 9 + 10?'
         answer = funni
     }
-    
+    else if (t == 3) {
+        question = 'where is jeff from?'
+        answer = north
+    }
 }
 
 function image() {
-    if (jeffcoin >= 6) {
+    if (jeffcoin >= 15) {
   var n = Math.ceil(Math.random() * 6); 
+  jeffcoin = jeffcoin - 15
   if (n == 1) {
       y = 'https://media.discordapp.net/attachments/679400883162710037/679400945939120128/image0.png?width=343&height=611'
   }
