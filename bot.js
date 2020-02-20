@@ -196,7 +196,7 @@ if (message.content == '?help') {
             message.reply('I didnt ask')
         }
     }
-
+/*
     if (message.content == '?north korea') {
         if (answer == korea) {
             message.reply('Youre right! Here are 5 jeffcoins')
@@ -207,11 +207,11 @@ if (message.content == '?help') {
             message.reply('I didnt ask')
         }
     }
-
+*/
 });
 
 function jeffquiz() {
-    var t = Math.ceil(Math.random() * 3); 
+    var t = Math.ceil(Math.random() * 2); 
     if (t == 1) {
         question = 'What is gods birthday?'
         answer = birthday
@@ -220,10 +220,7 @@ function jeffquiz() {
         question = 'whats 9 + 10?'
         answer = funni
     }
-    else if (t == 3) {
-        question = 'where is jeff from?'
-        answer = korea
-    }
+    
 }
 
 function image() {
